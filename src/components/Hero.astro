@@ -1,0 +1,22 @@
+---
+import "../styles/hero.css";
+import content from "../data/en.json";
+---
+
+<section class="hero">
+  <p class="hero__eyebrow">
+    {content.hero.eyebrow}
+  </p>
+
+  <h1 class="hero__title">
+    {content.hero.title}
+  </h1>
+
+  <p class="hero__description">
+    {content.hero.description}
+  </p>
+
+  <a class="hero__cta" href="#contact">
+    {content.hero.primaryCta}
+  </a>
+</section>

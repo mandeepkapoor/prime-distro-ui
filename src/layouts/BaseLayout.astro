@@ -1,0 +1,31 @@
+---
+import "../styles/global.css";
+import content from "../data/en.json";
+
+const { title = content.seo.title, description = content.seo.description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+
+    <script is:inline>
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (savedTheme) {
+        document.documentElement.dataset.theme = savedTheme;
+      } else if (prefersDark) {
+        document.documentElement.dataset.theme = "dark";
+      }
+    </script>
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>

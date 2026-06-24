@@ -1,0 +1,22 @@
+---
+import "../styles/header.css";
+import content from "../data/en.json";
+import ThemeToggle from "./ThemeToggle.astro";
+---
+
+<header class="site-header">
+  <div class="site-header__container">
+
+    <div class="site-header__logo">
+      {content.company.name}
+    </div>
+
+    <nav class="site-header__nav">
+      <a href="#about">{content.navigation.about}</a>
+      <a href="#brands">{content.navigation.brands}</a>
+      <a href="#faq">{content.navigation.faq}</a>
+      <a href="#contact">{content.navigation.contact}</a>
+    </nav>
+    <ThemeToggle />
+  </div>
+</header>

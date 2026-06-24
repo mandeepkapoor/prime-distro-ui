@@ -1,0 +1,12 @@
+---
+import "../styles/theme-toggle.css";
+import content from "../data/en.json";
+---
+
+<button class="theme-toggle" type="button" aria-label={content.navigation.theme}>
+  <span class="theme-toggle__icon" data-theme-icon>☀️</span>
+</button>
+
+<script>
+  import "../scripts/theme-toggle.ts";
+</script>

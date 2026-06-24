@@ -1,0 +1,23 @@
+{
+  "company": {
+    "name": "Prime Distro Ltd"
+  },
+  "seo": {
+    "title": "Prime Distro Ltd | UK Vape & Nicotine Pouch Wholesale Distributor",
+    "description": "Prime Distro Ltd supplies verified vape and nicotine pouch brands to UK trade customers."
+  },
+  "hero": {
+    "eyebrow": "UK Wholesale Distributor",
+    "title": "UK Vape & Nicotine Pouch Wholesale Distributor",
+    "description": "Supplying verified, compliant and in-demand vape and nicotine pouch brands to UK trade customers.",
+    "primaryCta": "Apply for Trade Account"
+  },
+
+  "navigation": {
+    "about": "About",
+    "brands": "Brands",
+    "faq": "FAQ",
+    "contact": "Trade Enquiry",
+    "theme": "Theme"
+  }
+}
