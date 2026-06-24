@@ -1,22 +1,54 @@
 ---
 import "../styles/header.css";
+import "../styles/mobile-menu.css";
+
 import content from "../data/en.json";
+
 import ThemeToggle from "./ThemeToggle.astro";
 ---
 
 <header class="site-header">
   <div class="site-header__container">
+    <a href="/" class="site-header__logo" aria-label={`${content.company.name} home`}>
+      <img
+        class="site-header__logo-img"
+        src="/images/logo/prime-distro-icon.png"
+        alt={content.company.name}
+        width="42"
+        height="42"
+      />
+    </a>
 
-    <div class="site-header__logo">
-      {content.company.name}
-    </div>
-
-    <nav class="site-header__nav">
+    <nav class="site-header__nav" aria-label="Primary navigation">
       <a href="#about">{content.navigation.about}</a>
       <a href="#brands">{content.navigation.brands}</a>
       <a href="#faq">{content.navigation.faq}</a>
-      <a href="#contact">{content.navigation.contact}</a>
+      <a href="#contact">Trade Enquiry</a>
     </nav>
-    <ThemeToggle />
+
+    <div class="site-header__actions">
+      <ThemeToggle />
+
+      <button
+        id="mobile-menu-toggle"
+        class="mobile-menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+      >
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="#about">{content.navigation.about}</a>
+    <a href="#brands">{content.navigation.brands}</a>
+    <a href="#why-us">{content.navigation.whyUs}</a>
+    <a href="#faq">{content.navigation.faq}</a>
+    <a href="#contact">Trade Enquiry</a>
   </div>
 </header>
+
+<script>
+  import "../scripts/mobile-menu.ts";
+</script>

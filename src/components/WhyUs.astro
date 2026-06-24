@@ -1,0 +1,23 @@
+---
+import "../styles/why-us.css";
+import content from "../data/en.json";
+---
+
+<section class="why-us" id="why-us">
+  <div class="why-us__header">
+    <p class="why-us__eyebrow">{content.whyUs.eyebrow}</p>
+    <h2>{content.whyUs.title}</h2>
+    <p>{content.whyUs.description}</p>
+  </div>
+
+  <div class="why-us__grid">
+    {
+      content.whyUs.items.map((item) => (
+        <article class="why-us__card">
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+        </article>
+      ))
+    }
+  </div>
+</section>

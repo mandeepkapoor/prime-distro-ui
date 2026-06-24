@@ -3,51 +3,105 @@
   top: 0;
   z-index: 100;
   border-bottom: 1px solid var(--border);
-  background: color-mix(in srgb, var(--bg) 85%, transparent);
-  backdrop-filter: blur(12px);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(14px);
 }
 
 .site-header__container {
-  width: min(1120px, calc(100% - 32px));
-  min-height: 72px;
+  width: min(1180px, calc(100% - 32px));
+  min-height: 500px;
   margin: 0 auto;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
+  gap: 32px;
 }
 
 .site-header__logo {
-  font-size: 1.125rem;
-  font-weight: 700;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.site-header__logo:hover {
+  background: transparent !important;
+}
+
+.site-header__logo-img {
+  display: block;
+  width: 58px;
+  height: 72px;
+  max-width: none;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.site-header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.site-header__nav a {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.98rem;
+  font-weight: 800;
+  border-radius: 0;
+}
+
+.site-header__nav a:hover {
+  background: none !important;
+  color: var(--primary);
 }
 
 .site-header__actions {
   display: flex;
   align-items: center;
-  gap: 16px;
-}
-
-.site-header__nav {
-  display: flex;
-  gap: 24px;
-}
-
-.site-header__nav a {
-  margin: 0;
-  padding: 0;
-  background: none;
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.site-header__nav a:hover {
-  color: var(--primary);
+  justify-content: flex-end;
+  gap: 12px;
 }
 
 @media (max-width: 768px) {
+  .site-header__container {
+    min-height: 500px;
+    grid-template-columns: auto auto;
+    gap: 16px;
+  }
+
   .site-header__nav {
     display: none;
+  }
+
+  .site-header__logo-img {
+    width: 48px;
+    height: 72px;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-header__container {
+    width: min(100% - 24px, 1180px);
+  }
+
+  .site-header__logo-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .site-header__actions {
+    gap: 8px;
   }
 }

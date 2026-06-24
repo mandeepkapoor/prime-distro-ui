@@ -1,0 +1,17 @@
+{
+  "about": {
+    "warehouse": {
+      "src": "/images/about-warehouse.png",
+      "alt": "Prime Distro warehouse storage and distribution area"
+    }
+  },
+  "hero": {
+    "products": {
+      "src": "/images/hero-products-bg.png",
+      "src-light": "/images/hero-products-bg-light.png",
+      "mobileSrc": "/images/hero-products-mobile.png",
+      "mobileSrc-light": "/images/hero-products-mobile-light.png",
+      "alt": "Premium vape devices and nicotine pouch products for UK wholesale distribution"
+    }
+  }
+}

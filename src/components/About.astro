@@ -1,0 +1,41 @@
+---
+import "../styles/about.css";
+import content from "../data/en.json";
+import images from "../data/images.json";
+---
+
+<section class="about" id="about">
+  <div class="about__content">
+    <p class="about__eyebrow">
+      {content.about.eyebrow}
+    </p>
+
+    <h2>
+      {content.about.title}
+    </h2>
+
+    <p>
+      {content.about.description}
+    </p>
+
+    <div class="about__stats">
+      {
+        content.about.stats.map((stat) => (
+          <div class="about__stat">
+            <strong>{stat.value}</strong>
+            <span>{stat.label}</span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="about__visual">
+    <img
+      class="about__image"
+      src={images.about.warehouse.src}
+      alt={images.about.warehouse.alt}
+      loading="lazy"
+    />
+  </div>
+</section>

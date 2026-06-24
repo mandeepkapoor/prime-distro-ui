@@ -18,8 +18,16 @@ html[data-theme="dark"] {
   --primary-hover: #3b82f6;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -35,12 +43,22 @@ body {
 
 main {
   min-height: 100vh;
+  width: min(100% - 2rem, 1200px);
+   margin-inline: auto;
 }
 
-section {
-  width: min(1120px, calc(100% - 32px));
-  margin: 0 auto;
-  padding: 96px 0;
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: break-word;
 }
 
 h1 {

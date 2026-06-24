@@ -1,23 +1,148 @@
 {
   "company": {
-    "name": "Prime Distro Ltd"
+    "name": "Prime Distro Ltd",
+    "tagline": "Wholesale Distribution Partner",
+
+    "contact": {
+      "email": "sales@primedistro.co.uk",
+      "phone": "+44 XXXXX XXXXXX",
+      "location": "United Kingdom"
+    }
   },
   "seo": {
     "title": "Prime Distro Ltd | UK Vape & Nicotine Pouch Wholesale Distributor",
-    "description": "Prime Distro Ltd supplies verified vape and nicotine pouch brands to UK trade customers."
+    "description": "Prime Distro Ltd is a UK-based wholesale distributor supplying vape and nicotine pouch brands to trade customers across the United Kingdom.",
+    "keywords": "UK vape wholesale distributor, nicotine pouch wholesale UK, trade vape supplier UK, wholesale vape distributor, Prime Distro Ltd"
   },
   "hero": {
     "eyebrow": "UK Wholesale Distributor",
     "title": "UK Vape & Nicotine Pouch Wholesale Distributor",
     "description": "Supplying verified, compliant and in-demand vape and nicotine pouch brands to UK trade customers.",
-    "primaryCta": "Apply for Trade Account"
+    "primaryCta": "Apply for Trade Account",
+    "secondaryCta": "View Brands",
+    "highlights": [
+      "UK Based",
+      "Trade Focused",
+      "Verified Supply"
+    ]
   },
 
   "navigation": {
     "about": "About",
     "brands": "Brands",
+    "whyUs": "Why Us",
     "faq": "FAQ",
     "contact": "Trade Enquiry",
     "theme": "Theme"
+  },
+
+  "trustBar": [
+    {
+      "title": "Fast Uk Shippping",
+      "text": "Supplying trade customers across the UK"
+    },
+    {
+      "title": "Authentic Products",
+      "text": "Sourced through trusted supplier channels"
+    },
+    {
+      "title": "Trade Focused",
+      "text": "Built for retailers, wholesalers and trade buyers"
+    },
+    {
+      "title": "Responsive Support",
+      "text": "Quick communication for trade enquiries"
+    }
+  ],
+
+  "about": {
+    "eyebrow": "About Prime Distro",
+    "title": "A Reliable UK Distribution Partner",
+    "description": "Prime Distro Ltd works with trusted suppliers and established brands to support retailers and trade customers across the United Kingdom. Our focus is reliable supply, responsive communication and long-term business relationships.",
+    "stats": [
+      {
+        "value": "UK",
+        "label": "Based Distribution"
+      },
+      {
+        "value": "Trade",
+        "label": "Focused Service"
+      },
+      {
+        "value": "Fast",
+        "label": "Response Times"
+      }
+    ]
+  },
+
+  "whyUs": {
+    "eyebrow": "Why Choose Prime Distro",
+    "title": "Built Around Long-Term Trade Relationships",
+    "description": "We focus on reliability, communication and supply consistency to help trade customers grow with confidence.",
+
+    "items": [
+      {
+        "title": "Reliable Supply",
+        "description": "Access to trusted products through established supplier relationships."
+      },
+      {
+        "title": "Fast Communication",
+        "description": "Responsive support for enquiries and account requests."
+      },
+      {
+        "title": "Trade Focused",
+        "description": "Designed specifically for retailers, wholesalers and trade buyers."
+      },
+      {
+        "title": "Growth Minded",
+        "description": "Focused on building long-term business partnerships."
+      }
+    ]
+  },
+
+  "faq": {
+    "eyebrow": "Frequently Asked Questions",
+    "title": "Common Trade Questions",
+    "description": "Answers to some of the most common questions from trade customers.",
+
+    "items": [
+      {
+        "question": "Who can open a trade account?",
+        "answer": "Trade accounts are intended for retailers, wholesalers and legitimate business customers."
+      },
+      {
+        "question": "Which brands do you supply?",
+        "answer": "We work with a range of established vape and nicotine pouch brands. Availability may vary."
+      },
+      {
+        "question": "Do you supply across the UK?",
+        "answer": "Yes, we support trade customers throughout the United Kingdom."
+      },
+      {
+        "question": "How do I enquire about products?",
+        "answer": "Use the trade enquiry form and our team will get back to you as soon as possible."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Trade Enquiry",
+    "title": "Open a Conversation",
+    "description": "Whether you're a retailer, wholesaler or trade buyer, we'd be happy to discuss how Prime Distro can support your business.",
+
+    "form": {
+      "name": "Full Name",
+      "company": "Company Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Tell us about your enquiry",
+      "submit": "Send Enquiry"
+    }
+  },
+
+  "footer": {
+    "description": "Prime Distro Ltd is a UK-based wholesale distributor supporting trade customers with reliable supply, responsive communication and trusted brand access.",
+    "compliance": "For trade customers only. Age-restricted products must be sold responsibly and in line with UK regulations.",
+    "copyright": "© 2026 Prime Distro Ltd. All rights reserved."
   }
+
 }

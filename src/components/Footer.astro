@@ -1,0 +1,97 @@
+---
+import "../styles/footer.css";
+import content from "../data/en.json";
+---
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo" aria-label={`${content.company.name} home`}>
+          <img
+            class="footer__logo-img footer__logo-img--light"
+            src="/images/logo/PrimeDistro-G-wordmark-dark.png"
+            alt={content.company.name}
+            width="300"
+            height="80"
+            loading="lazy"
+          />
+
+          <img
+            class="footer__logo-img footer__logo-img--dark"
+            src="/images/logo/PrimeDistro-G-wordmark-light.svg"
+            alt=""
+            width="300"
+            height="80"
+            loading="lazy"
+            aria-hidden="true"
+          />
+        </a>
+
+        <p class="footer__description">
+          Supplying verified vape and nicotine pouch brands to UK trade customers.
+        </p>
+      </div>
+
+      <div class="footer__group">
+        <h3>Brands</h3>
+
+        <div class="footer__brands">
+          <span>PIXL</span>
+          <span>HYOLA</span>
+          <span>VELO</span>
+          <span>PABLO</span>
+          <span>KILLA</span>
+        </div>
+      </div>
+
+      <div class="footer__group">
+        <h3>Navigation</h3>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#about">{content.navigation.about}</a>
+          <a href="#brands">{content.navigation.brands}</a>
+          <a href="#faq">{content.navigation.faq}</a>
+          <a href="#contact">Trade Enquiry</a>
+        </nav>
+      </div>
+
+      <div class="footer__group">
+        <h3>Contact</h3>
+
+        <ul class="footer__email-list">
+          <li>
+            <span>General</span>
+            <a href="mailto:info@prime-distro.com">info@prime-distro.com</a>
+          </li>
+
+          <li>
+            <span>Invoices</span>
+            <a href="mailto:invoices@prime-distro.com">invoices@prime-distro.com</a>
+          </li>
+
+          <li>
+            <span>PARMS</span>
+            <a href="mailto:parms@prime-distro.com">parms@prime-distro.com</a>
+          </li>
+
+          <li>
+            <span>DILS</span>
+            <a href="mailto:dils@prime-distro.com">dils@prime-distro.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>
+        © {new Date().getFullYear()} {content.company.name}. All rights reserved.
+      </p>
+
+      <p class="footer__credit">
+        Website designed &amp; developed by
+        <a href="mailto:you@example.com">Your Name</a>
+      </p>
+    </div>
+  </div>
+</footer>

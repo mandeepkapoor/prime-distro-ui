@@ -2,16 +2,84 @@
 import "../styles/global.css";
 import content from "../data/en.json";
 
-const { title = content.seo.title, description = content.seo.description } = Astro.props;
+const {
+  title = content.seo.title,
+  description = content.seo.description
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
     <title>{title}</title>
+
+    <meta
+      name="description"
+      content={description}
+    />
+
+    <meta
+      name="keywords"
+      content={content.seo.keywords}
+    />
+
+    <meta
+      name="author"
+      content="Prime Distro Ltd"
+    />
+
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:title"
+      content={title}
+    />
+
+    <meta
+      property="og:description"
+      content={description}
+    />
+
+    <meta
+      property="og:site_name"
+      content="Prime Distro Ltd"
+    />
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content={title}
+    />
+
+    <meta
+      name="twitter:description"
+      content={description}
+    />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.ico"
+    />
 
     <script is:inline>
       const savedTheme = localStorage.getItem("theme");
@@ -23,6 +91,7 @@ const { title = content.seo.title, description = content.seo.description } = Ast
         document.documentElement.dataset.theme = "dark";
       }
     </script>
+
   </head>
 
   <body>

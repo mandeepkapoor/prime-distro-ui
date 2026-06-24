@@ -1,0 +1,55 @@
+---
+import "../styles/contact.css";
+import content from "../data/en.json";
+---
+
+<section class="contact" id="contact">
+  <div class="contact__content">
+    <p class="contact__eyebrow">{content.contact.eyebrow}</p>
+    <h2>{content.contact.title}</h2>
+    <p>{content.contact.description}</p>
+  </div>
+
+  <form class="contact__form">
+    <label>
+      {content.contact.form.name}
+      <input type="text"
+      name="name"
+      autocomplete="name"
+      required />
+    </label>
+
+    <label>
+      {content.contact.form.company}
+      <input type="text"
+      name="company"
+      autocomplete="organization"
+      required />
+    </label>
+
+    <label>
+      {content.contact.form.email}
+      <input
+      type="email"
+      name="email"
+      autocomplete="email"
+      required />
+    </label>
+
+    <label>
+      {content.contact.form.phone}
+      <input type="tel"
+      name="phone"
+      autocomplete="tel"/>
+    </label>
+
+    <label class="contact__message">
+      {content.contact.form.message}
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+
+    <button type="submit">
+      {content.contact.form.submit}
+    </button>
+  </form>
+</section>

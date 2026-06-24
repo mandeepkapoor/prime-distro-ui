@@ -1,0 +1,59 @@
+{
+  "section": {
+    "eyebrow": "Brands",
+    "title": "Leading Brands Available Through Prime Distro",
+    "description": "We work with established and in-demand brands to help retailers meet customer demand with confidence."
+  },
+
+  "items": [
+    {
+      "name": "PIXL",
+      "category": "Vape",
+      "description": "Popular disposable and rechargeable vape products.",
+      "image": {
+        "src": "/images/brands/pixl.png",
+        "alt": "Brand Name vape product range"
+      }
+    },
+    {
+      "name": "HYOLA",
+      "description": "Trusted vape products with strong retail demand.",
+      "image": {
+        "src": "/images/brands/hyola.png",
+        "alt": "Brand Name vape product range"
+      }
+    },
+    {
+      "name": "VELO",
+      "description": "Well-known nicotine pouch brand.",
+      "image": {
+        "src": "/images/brands/vello.png",
+        "alt": "Brand Name vape product range"
+      }
+    },
+    {
+      "name": "PABLO",
+      "description": "High-strength nicotine pouch products.",
+      "image": {
+        "src": "/images/brands/pablo.png",
+        "alt": "Brand Name vape product range"
+      }
+    },
+    {
+      "name": "KILLA",
+      "description": "Recognised nicotine pouch brand.",
+      "image": {
+        "src": "/images/brands/Killa.png",
+        "alt": "Brand Name vape product range"
+      }
+    },
+    {
+      "name": "More Brands",
+      "description": "Additional brands available on request.",
+      "image": {
+        "src": "/images/brands/More.png",
+        "alt": "Brand Name vape product range"
+      }
+    }
+  ]
+}

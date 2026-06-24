@@ -1,0 +1,63 @@
+---
+import "../styles/brands.css";
+import brands from "../data/brands.json";
+---
+
+<section class="brands" id="brands">
+  <div class="brands__header">
+    <div>
+      <p class="brands__eyebrow">
+        {brands.section.eyebrow}
+      </p>
+
+      <h2>
+        {brands.section.title}
+      </h2>
+    </div>
+
+    <p class="brands__intro">
+      {brands.section.description}
+    </p>
+  </div>
+
+  <div class="brands__grid">
+    {
+      brands.items.map((brand) => (
+        <article class="brands__card">
+          <div class="brands__visual">
+            {
+              brand.image?.src ? (
+                <img
+                  src={brand.image.src}
+                  alt={brand.image.alt || `${brand.name} product range`}
+                  loading="lazy"
+                  decoding="async"
+                />
+              ) : (
+                <div class="brands__logo">
+                  {brand.name}
+                </div>
+              )
+            }
+          </div>
+
+          <div class="brands__body">
+            <div class="brands__name-row">
+              <h3>{brand.name}</h3>
+
+              {
+                brand.category && (
+                  <span>{brand.category}</span>
+                )
+              }
+            </div>
+
+            <p>
+              {brand.description}
+            </p>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>

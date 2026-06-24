@@ -1,0 +1,21 @@
+---
+import "../styles/trust-bar.css";
+import content from "../data/en.json";
+---
+
+<section class="trust-bar">
+
+  <div class="trust-bar__container">
+
+    {
+      content.trustBar.map((item) => (
+        <div class="trust-bar__item">
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </div>
+      ))
+    }
+
+  </div>
+
+</section>

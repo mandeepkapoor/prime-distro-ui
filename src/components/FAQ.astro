@@ -1,0 +1,33 @@
+---
+import "../styles/faq.css";
+import content from "../data/en.json";
+---
+
+<section class="faq" id="faq">
+  <div class="faq__header">
+    <p class="faq__eyebrow">{content.faq.eyebrow}</p>
+    <h2>{content.faq.title}</h2>
+    <p>{content.faq.description}</p>
+  </div>
+
+  <div class="faq__list">
+    {
+      content.faq.items.map((item) => (
+        <article class="faq__item">
+          <button class="faq__question" type="button">
+            <span>{item.question}</span>
+            <span class="faq__icon">+</span>
+          </button>
+
+          <div class="faq__answer">
+            <p>{item.answer}</p>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>
+
+<script>
+  import "../scripts/faq-accordion.ts";
+</script>

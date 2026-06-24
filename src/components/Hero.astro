@@ -1,22 +1,41 @@
 ---
 import "../styles/hero.css";
 import content from "../data/en.json";
+import images from "../data/images.json";
 ---
 
-<section class="hero">
-  <p class="hero__eyebrow">
-    {content.hero.eyebrow}
-  </p>
+<section
+  class="hero"
+  style={`
+    --hero-bg-desktop-dark: url('${images.hero.products.src}');
+    --hero-bg-desktop-light: url('${images.hero.products["src-light"]}');
+    --hero-bg-mobile-dark: url('${images.hero.products.mobileSrc}');
+    --hero-bg-mobile-light: url('${images.hero.products["mobileSrc-light"]}');
+  `}
+>
+  <div class="hero__overlay">
+    <div class="hero__content">
+      <p class="hero__eyebrow">
+        {content.hero.eyebrow}
+      </p>
 
-  <h1 class="hero__title">
-    {content.hero.title}
-  </h1>
+      <h1 class="hero__title">
+        {content.hero.title}
+      </h1>
 
-  <p class="hero__description">
-    {content.hero.description}
-  </p>
+      <p class="hero__description">
+        {content.hero.description}
+      </p>
 
-  <a class="hero__cta" href="#contact">
-    {content.hero.primaryCta}
-  </a>
+      <div class="hero__actions">
+        <a class="hero__cta hero__cta--primary" href="#contact">
+          {content.hero.primaryCta}
+        </a>
+
+        <a class="hero__cta hero__cta--secondary" href="#brands">
+          {content.hero.secondaryCta}
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
