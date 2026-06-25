@@ -2,15 +2,16 @@
 import "../styles/Hero.css";
 import content from "../data/en.json";
 import images from "../data/images.json";
+import { asset } from "../lib/assets";
 ---
 
 <section
   class="hero"
   style={`
-    --hero-bg-desktop-dark: url('${images.hero.products.src}');
-    --hero-bg-desktop-light: url('${images.hero.products["src-light"]}');
-    --hero-bg-mobile-dark: url('${images.hero.products.mobileSrc}');
-    --hero-bg-mobile-light: url('${images.hero.products["mobileSrc-light"]}');
+    --hero-bg-desktop-dark: url('${asset(images.hero.products.src)}');
+    --hero-bg-desktop-light: url('${asset(images.hero.products["src-light"])}');
+    --hero-bg-mobile-dark: url('${asset(images.hero.products.mobileSrc)}');
+    --hero-bg-mobile-light: url('${asset(images.hero.products["mobileSrc-light"])}');
   `}
 >
   <div class="hero__overlay">
