@@ -1,6 +1,8 @@
 ---
 import "../styles/brands.css";
 import brands from "../data/brands.json";
+import { asset } from "../lib/assets";
+
 ---
 
 <section class="brands" id="brands">
@@ -28,7 +30,7 @@ import brands from "../data/brands.json";
             {
               brand.image?.src ? (
                 <img
-                  src={brand.image.src}
+                  src={asset(brand.image.src)}
                   alt={brand.image.alt || `${brand.name} product range`}
                   loading="lazy"
                   decoding="async"

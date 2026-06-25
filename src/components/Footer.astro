@@ -1,6 +1,8 @@
 ---
 import "../styles/footer.css";
 import content from "../data/en.json";
+import { asset } from "../lib/assets";
+
 ---
 
 <footer class="footer">
@@ -10,7 +12,7 @@ import content from "../data/en.json";
         <a href="/" class="footer__logo" aria-label={`${content.company.name} home`}>
           <img
             class="footer__logo-img footer__logo-img--light"
-            src="/images/logo/PrimeDistro-G-wordmark-dark.png"
+            src={asset("/images/logo/PrimeDistro-G-wordmark-dark.png")}
             alt={content.company.name}
             width="300"
             height="80"
@@ -19,7 +21,7 @@ import content from "../data/en.json";
 
           <img
             class="footer__logo-img footer__logo-img--dark"
-            src="/images/logo/PrimeDistro-G-wordmark-light.svg"
+            src={asset("/images/logo/PrimeDistro-G-wordmark-light.svg")}
             alt=""
             width="300"
             height="80"

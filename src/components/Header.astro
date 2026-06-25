@@ -5,6 +5,7 @@ import "../styles/mobile-menu.css";
 import content from "../data/en.json";
 
 import ThemeToggle from "./ThemeToggle.astro";
+import { asset } from "../lib/assets";
 ---
 
 <header class="site-header">
@@ -12,7 +13,7 @@ import ThemeToggle from "./ThemeToggle.astro";
     <a href="/" class="site-header__logo" aria-label={`${content.company.name} home`}>
       <img
         class="site-header__logo-img"
-        src="/images/logo/prime-distro-icon.png"
+        src={asset("/images/logo/prime-distro-icon.png")}
         alt={content.company.name}
         width="42"
         height="42"
