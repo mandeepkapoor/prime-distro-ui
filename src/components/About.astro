@@ -2,6 +2,8 @@
 import "../styles/about.css";
 import content from "../data/en.json";
 import images from "../data/images.json";
+import { asset } from "../lib/assets";
+
 ---
 
 <section class="about" id="about">
@@ -33,7 +35,7 @@ import images from "../data/images.json";
   <div class="about__visual">
     <img
       class="about__image"
-      src={images.about.warehouse.src}
+      src={asset(images.about.warehouse.src)}
       alt={images.about.warehouse.alt}
       loading="lazy"
     />
