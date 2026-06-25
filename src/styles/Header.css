@@ -9,7 +9,7 @@
 
 .site-header__container {
   width: min(1180px, calc(100% - 32px));
-  min-height: 500px;
+  min-height: 92px;
   margin: 0 auto;
 
   display: grid;
@@ -76,7 +76,7 @@
 
 @media (max-width: 768px) {
   .site-header__container {
-    min-height: 500px;
+    min-height: 92px;
     grid-template-columns: auto auto;
     gap: 16px;
   }
